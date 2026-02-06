@@ -30,3 +30,6 @@ Install all dependencies through requirements.txt file
 ```python
 pip install -r requirements.txt
 ```
+
+
+## Training
