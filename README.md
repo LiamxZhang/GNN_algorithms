@@ -25,11 +25,34 @@ conda activate gnn_env
 ```
 
 ### Step 3: Install dependencies
-Install all dependencies through requirements.txt file
+
+If the device is CPU only, install the pytorch in CPU version:
+```python
+conda install pytorch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 cpuonly -c pytorch
+```
+
+If the device is Nvidia GPU, install the pytorch in CUDA version
+```python
+conda install pytorch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 pytorch-cuda=12.1 -c pytorch -c nvidia
+```
+
+Install the torch-geometric library
+```python
+pip install torch-scatter==2.1.2 -f https://data.pyg.org/whl/torch-2.5.0+cpu.html
+pip install torch-sparse==0.6.18 -f https://data.pyg.org/whl/torch-2.5.0+cpu.html
+pip install torch-cluster==1.6.3 -f https://data.pyg.org/whl/torch-2.5.0+cpu.html
+pip install torch-spline-conv==1.2.2 -f https://data.pyg.org/whl/torch-2.5.0+cpu.html
+
+pip install torch-geometric==2.7.0
+```
+
+Install all rest dependencies through requirements.txt file
 
 ```python
 pip install -r requirements.txt
 ```
+
+## Tutorial
 
 
 ## Training
