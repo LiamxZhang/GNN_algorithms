@@ -38,10 +38,10 @@ conda install pytorch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 pytorch-cuda=
 
 Install the torch-geometric library
 ```python
-pip install torch-scatter==2.1.2 -f https://data.pyg.org/whl/torch-2.5.0+cpu.html
-pip install torch-sparse==0.6.18 -f https://data.pyg.org/whl/torch-2.5.0+cpu.html
-pip install torch-cluster==1.6.3 -f https://data.pyg.org/whl/torch-2.5.0+cpu.html
-pip install torch-spline-conv==1.2.2 -f https://data.pyg.org/whl/torch-2.5.0+cpu.html
+pip install --no-cache-dir torch-scatter==2.1.2 -f https://data.pyg.org/whl/torch-2.5.0+cpu.html
+pip install --no-cache-dir torch-sparse==0.6.18 -f https://data.pyg.org/whl/torch-2.5.0+cpu.html
+pip install --no-cache-dir torch-cluster==1.6.3 -f https://data.pyg.org/whl/torch-2.5.0+cpu.html
+pip install --no-cache-dir torch-spline-conv==1.2.2 -f https://data.pyg.org/whl/torch-2.5.0+cpu.html
 
 pip install torch-geometric==2.7.0
 ```
@@ -53,6 +53,8 @@ pip install -r requirements.txt
 ```
 
 ## Tutorial
-
+A tutorial of Jupyter notebooks can be found in the /tutorial folder. The content are
+a_simple_tutorial_for_gcn: GCN, dataset, visualization
+a_simple_tutorial_for_gat:
 
 ## Training
